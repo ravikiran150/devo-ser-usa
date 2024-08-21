@@ -5,12 +5,16 @@ body {
     background-color: white;
     color: black;
 }
+.heading {
+    text-align: center;
+    
+}
+
 
 header {
     background-color: #FF9933; /* Saffron color */
     padding: 20px;
-    text-align: center;
-      
+          
     header img {
         width: auto; /* Adjust the width as per your preference */
         height: auto;
@@ -19,6 +23,7 @@ header {
     h1 {
         margin: 0;
         margin-top: 10px; /* Adjust the margin as needed */
+        text-align: center;
     }
     
 }
@@ -52,6 +57,7 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
+    background-color: beige;
 }
 
 footer {
@@ -96,3 +102,17 @@ footer {
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-toggle:hover   
+   .dropdown-menu {
+    display: block;
+  }
