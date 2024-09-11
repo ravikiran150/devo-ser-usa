@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divine Directions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -14,14 +16,14 @@
         <nav class="navbar">
             <div class="logo">
                 <img src= "./Logo-1.png" alt="Divine Directions Logo">
-                <h1>SRI GURU GRUHA PEETAM</h1>
+                 <h1 class="mainheading">SRI GURU GRUHA PEETAM <br>Divine Directions</h1>
+                <!-- <div class="centerimage"></div> -->
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#why-us">About Us</a></li>
+                <li><a href="#book-service-form">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -54,30 +56,12 @@
             <img src="./logo-no-background.png" alt="Divine Ritual Image">
         </div>
     </section>
-    <!-- Book Service Form -->
-    <section class="service-form">
-        <div class="form-container">
-            <h2>Get Your Focused Consultation</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Mobile Number" required>
-                <select>
-                    <option value="namakaranam">Namakaranam</option>
-                    <option value="vivaham">Vivaham</option>
-                    <option value="upanayanam">Upanayanam</option>
-                </select>
-                <textarea placeholder="Enter Message" rows="4"></textarea>
-                <button type="submit">Get Consultation Now</button>
-            </form>
-        </div>
-    </section>
   
  <!-- Online Puja Services Section -->
 <section class="puja-services" id="services">
     <div class="container">
         <div class="services-header">
-            <h2>We Provide the Best Online Puja Services</h2>
+            <h2>We Provide the Best Puja Services</h2>
             <p>The Veda Pandits perform all Pujas and Homas as well as special occasion ceremonies. We have the best group of eminent Purohits and scholars at Divine Directions, a trusted name in India.</p>
         </div>
         
@@ -172,3 +156,64 @@
         </div>
     </div>
 </section>
+
+<!-- Testimonials Section -->
+
+<section class="testimonial-section">
+    <div class="testimonial-container">
+        <div class="testimonial-image">
+            <img src="./pandit.jpg" alt="Customer Image">
+        </div>
+        <div class="testimonial-content">
+            <i class="fas fa-quote-left"></i>
+            <p>"Divine Directions made it easy for us to perform our family’s rituals remotely. Their services are excellent, and the purohits are very professional. Highly recommended!"</p>
+            <h4>–Murari Sharma</h4>
+        </div>
+    </div>
+</section>
+
+
+<!-- Book Service Form -->
+<!-- <section class="service-form">
+    <div class="form-container">
+        <h2>Get Your Focused Consultation</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <select>
+                <option value="namakaranam">Namakaranam</option>
+                <option value="vivaham">Vivaham</option>
+                <option value="upanayanam">Upanayanam</option>
+            </select>
+            <textarea placeholder="Enter Message" rows="4"></textarea>
+            <button type="submit">Get Consultation Now</button>
+        </form>
+    </div>
+</section> -->
+
+<!-- Contact Section -->
+<section id="book-service-form">
+    <div class="form-container">
+      <h2>Book a Service with Us</h2>
+      
+      <!-- Google Form Embed -->
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfXk2AWcyGzDbEmvwsmZcHjGUW-ysFsjuUM8083EIqJQ9UA8Q/viewform?embedded=true" 
+        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      
+    </div>
+  </section>
+  
+<!-- Footer section -->
+<footer class="footer-section">
+    <div class="footer-container">
+        <p>&copy; 2024 Divine Directions. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
