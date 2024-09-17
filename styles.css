@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(45deg, #ecaf2a, #edad0c, #f35f15);
+    background:linear-gradient(90deg,#ecaf2a, #edad0c, #f35f15) ;
 }
 
 /* Search box in the navigation bar */
