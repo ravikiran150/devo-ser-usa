@@ -62,3 +62,5 @@ searchButton.addEventListener("click", function() {
         alert("Searching for: " + query); // Replace with your actual search logic
     }
 });
+
+

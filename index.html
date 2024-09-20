@@ -14,16 +14,92 @@
 <body>
     <!-- Navigation Bar -->
     <header>
+        <div class="logo">
+            <span><h1 class="mainheading">SRI GURU GRUHA PEETAM</h1></span>
+            <img src= "./img/shortlogo.png" alt="Divine Directions Logo">
+        </div>
         <nav class="navbar">
-            <div class="logo">
-                <span><h1 class="mainheading">SRI GURU GRUHA PEETAM</h1></span>
-                <img src= "./img/shortlogo.png" alt="Divine Directions Logo">
-            </div>
+            
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">About Us</a></li>
-                <li><a href="#book-service-form">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#home"><i class="fas fa-home"></i>Home</a>
+    
+                </li>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#services">Abhishekam</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Ekavara Rudra Abhishekam </a></li>
+                        <li><a href="#">Maahanyasa purvaka Rudra Abhishekam </a></li>
+                        <li><a href="#">Rudra paashu patha Abhishekam  </a></li>
+                    </ul>
+                    </li>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#services">Homam</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Chandi Homam</a></li>
+                            <li><a href="#">Ganapathi Homam</a></li>
+                            <li><a href="#">Rudra Homam</a></li>
+                            <li><a href="#">Sudharshana Homam</a></li>
+                            <li><a href="#">Ayushya Homam</a></li>
+                            <li><a href="#">Mruthyunjaya Homam</a></li>
+                            <li><a href="#">Navagraha  santhi Homam</a></li>
+                            <li><a href="#">Nakshatra Homam</a></li>
+                            <li><a href="#">Lakshmi Homam</a></li>
+                            <li><a href="#">Vaastu Homam</a></li>
+
+                        </ul>
+                        </li>
+                        <ul class="nav-links">
+                            <li class="dropdown">
+                                <a href="#services">Pooja Services</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Ganesh Pooja</a></li>
+                                <li><a href="#">Punyaha Vaachanam</a></li>
+                                <li><a href="#">Bhoomi Pooja (Ground breaking ceremony)</a></li>
+                                <li><a href="#">Gruha pravesham (House warming ceremony)</a></li>
+                                <li><a href="#">Vaasthu Shanti Pooja</a></li>
+                                <li><a href="#">Navagraha Shanti Pooja</a></li>
+                                <li><a href="#">Lakshmi Pooja</a></li>
+                                <li><a href="#">Pumsavanam</a></li>
+                                <li><a href="#">Seemantham (Baby shower Ceremony)</a></li>
+                                <li><a href="#">Jathakarma</a></li>
+                                <li><a href="#">Namakaranam (Naming ceremony+cradle ceremony)</a></li>
+                                <li><a href="#">Annaprasana  (Baby 1st time rice feeding ceremony)</a></li>
+                                <li><a href="#">Aksharabyasam (Baby 1st time school ceremony)</a></li>
+                                <li><a href="#">Kesa kandana (Baby 1st time Haircut ceremony)</a></li>
+                                <li><a href="#">Upanayanam (Sacred thread ceremony)</a></li>
+
+                            </ul>
+                            </li>
+                        
+                            <ul class="nav-links">
+                                <li class="dropdown">
+                                    <a href="#services">Marriage</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Engagements</a></li>
+                                    <li><a href="#">Vivahamu (weddings)</a></li>
+                                    <li><a href="#">Shasti Purthi (60 years wedding ceremony)</a></li>
+                                    <li><a href="#">Vugra & Bhema ratha shanthi</a></li>
+                                </ul>
+                                </li>
+
+                                <ul class="nav-links">
+                                    <li class="dropdown">
+                                        <a href="#services">Vratams</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="#">Sankasthaharachatrudhi vratham </a></li>
+                                        <li><a href="#">Satyanarayana vratham </a></li>
+                                        <li><a href="#">varalakshmi vratham venkateswara vratham </a></li>
+                                        <li><a href="#">Vugra & Bhema ratha shanthi</a></li>
+                                    </ul>
+                                    </li>
+
+                                
+    
+
+
                 <div class="nav-search-container">
                     <input type="text" id="search-box" class="search-input" placeholder="Search services...">
                     <button id="search-button" class="search-btn">
@@ -36,9 +112,13 @@
 
                        
         </nav>
+        
     </header>
     <!-- Hero Section -->
+    
     <section class="hero">
+
+       
         <div class="hero-text">
             <h1>Book a Divine Ritual with Us</h1>
             <p> India is known as the land of Vedas,the land of karma. It is also the birthplace of Vedic literature. The entire Vedic literature is the basis of infinite knowledge.
@@ -158,28 +238,9 @@
             <p>"Divine Directions made it easy for us to perform our family’s rituals. Their services are excellent, and the purohits are very professional. Highly recommended!"</p>
             <h4>–Murari Sharma</h4>
         </div>
+        </div>
     </div>
 </section>
-
-
-<!-- Book Service Form -->
-<!-- <section class="service-form">
-    <div class="form-container">
-        <h2>Get Your Focused Consultation</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Mobile Number" required>
-            <select>
-                <option value="namakaranam">Namakaranam</option>
-                <option value="vivaham">Vivaham</option>
-                <option value="upanayanam">Upanayanam</option>
-            </select>
-            <textarea placeholder="Enter Message" rows="4"></textarea>
-            <button type="submit">Get Consultation Now</button>
-        </form>
-    </div>
-</section> -->
 
 <!-- Contact Section -->
 <section id="book-service-form">
@@ -261,7 +322,7 @@
     </div>
   </section>
   
-<!-- Footer section -->
+<!-- Footer section
 <footer class="footer-section">
     <div class="footer-container">
         <p>&copy; 2024 Divine Directions. All Rights Reserved.</p>
@@ -272,5 +333,67 @@
             <a href="https://www.instagram.com" target="_blank"><i class="fa-regular fa-message"></i></a>
         </div>
     </div>
-</footer>
+</footer> -->
 
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./img/2logo-color.png" alt="Company Logo" />
+            
+        </div>
+
+        <div class="footer-sections">
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Anti-discrimination policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- For Customers Section -->
+            <div class="footer-section">
+                <h3>For customers</h3>
+                <ul>
+                    <li><a href="#">UC reviews</a></li>
+                    <li><a href="#">Categories near you</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h3>Contact Details</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i><a href="#">  mail@gmail.com</a></li>
+                    <br>
+                    </i><i class="fas fa-phone"></i><a href="#">  +91 9959370059</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="footer-section social-links">
+                <h3>Social links</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                
+                <!-- <div class="app-links">
+                    <a href="#"><img src="app-store-badge.png" alt="App Store"></a>
+                    <a href="#"><img src="google-play-badge.png" alt="Google Play"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright"><p>© Copyright 2024 Your Company. All rights reserved.</p></div>
+</footer>

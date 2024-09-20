@@ -27,6 +27,65 @@ body {
     background:linear-gradient(90deg,#ecaf2a, #edad0c, #f35f15) ;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(17, 0, 0);
+    font-size: 18px;
+}
+
+
+.navbar li {
+    margin-right: 1rem;
+    position: relative;
+    border: #0e0b0a;
+    border-radius: 2px;
+}
+
+.navbar a {
+    color: #0a0101;
+    text-decoration: dashed;
+    padding: 0.5rem 1rem;
+    display: block;
+    border: #0e0b0a;
+    border-radius: 2px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;  
+    position: absolute;
+    background-color: #eac255;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+    list-style-type: none;
+}
+
+
+
+.dropdown-content a {
+    color: #070000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c4cdd0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
 /* Search box in the navigation bar */
 .nav-search-container {
     position: relative;
@@ -87,27 +146,15 @@ body {
     color: white;
 }
 
-
+.logo {
+    background:linear-gradient(90deg,#ecaf2a, #edad0c, #f35f15) ;
+}
 .logo img {
     height: 75px;
+    align-content: center;
     
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    border-radius: 2px;
-    border-color: black;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 2px;
-    border-color: black;
-}
 
 /* Hero Section */
 .hero {
@@ -123,6 +170,7 @@ body {
     color: #ff6600;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
+    text-align: center;
 }
 .hero-text ol{
     font-size: 1em;
@@ -560,61 +608,99 @@ body {
     }
 }
 
-/* Footer Section */
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8b8c89;
+}
+
+.footer-sections {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+}
+
 .footer-section {
-    background-color: #04344c; /* light blue */
-    padding: 40px 0;
-    text-align: center;
+    min-width: 150px;
 }
 
-.footer-section p {
-    color: #efeff6; /* light blue text */
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-.footer-section .social-icons {
-    display: inline-block;
-    margin: 20px 0;
-}
-
-.footer-section .social-icons a {
-    color: #ffb703; /* yellow-orange */
-    margin: 0 15px;
-    font-size: 1.8em;
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.footer-section .social-icons a:hover {
-    color: #fb8500; /* bright orange on hover */
-}
-
-/* Know more  */
-/* body {
-    font-family: 'Arial', sans-serif;
-    background-color: #8ecae6;
+.footer-section h3 {
+    font-size: 16px;
     color: #023047;
-    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
     padding: 0;
 }
 
-header {
-    background-color: #219ebc;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.footer-section ul li {
+    margin-bottom: 8px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.footer-section ul li a {
+    text-decoration: none;
+    color: #219ebc;
 }
 
-header p {
-    margin: 5px 0 15px;
-    font-size: 1.2em;
-} */
+.footer-section ul li a:hover {
+    color: #fb8500;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #023047;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fb8500;
+}
+
+.app-links a img {
+    max-width: 120px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-sections {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+
 
 .subheading {
     justify-content: center;
@@ -697,4 +783,13 @@ button {
 
 button:hover {
     background-color: #ffb703;
+}
+
+
+.copyright {
+    height: 70px;
+    text-align: center;
+    color: rgb(4, 0, 0);
+    padding: 50px;
+
 }
