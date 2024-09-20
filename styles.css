@@ -460,19 +460,28 @@ body {
     }
 }
 
-/* Testimonial Section */
+/* Testimonials Section (Carousel) */
 .testimonial-section {
     background: linear-gradient(45deg, #ecaf2a, #edad0c, #f35f15);
     padding: 80px 0;
+    position: relative;
+}
+
+.testimonial-carousel {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .testimonial-container {
     display: flex;
     align-items: center;
-    max-width: 900px;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
@@ -487,28 +496,50 @@ body {
     object-fit: cover;
 }
 
-/* Testimonial section */
 .testimonial-content {
     flex: 1;
 }
 
 .testimonial-content i {
-    color: #ffb703; /* bright orange for quote icon */
+    color: #ffb703;
     font-size: 2em;
     margin-right: 10px;
 }
 
 .testimonial-content p {
-    color: #023047; /* dark blue for text */
+    color: #023047;
     font-size: 1.2em;
     line-height: 1.5em;
     margin: 20px 0;
 }
 
 .testimonial-content h4 {
-    color: #ffb703; /* yellow-orange for customer name */
+    color: #ffb703;
     font-size: 1.3em;
     margin-top: 10px;
+}
+
+/* Carousel navigation buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    color: #ffb703;
 }
 
 /* Team Section */
@@ -627,7 +658,7 @@ footer {
 }
 
 .footer-logo img {
-    max-width: 100px;
+    max-width:200px;
 }
 
 .footer-logo p {
