@@ -824,3 +824,13 @@ button:hover {
     padding: 50px;
 
 }
+
+
+.other-pages-text {
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    list-style: none;
+    margin: 2px;
+    
+}

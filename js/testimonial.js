@@ -23,7 +23,7 @@ function prevSlide() {
 }
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 2000); // Change slides every 4000 milliseconds (4 seconds)
+    autoSlideInterval = setInterval(nextSlide, 2000); // Change slides every 4000 milliseconds (2 seconds)
 }
 
 function stopAutoSlide() {
