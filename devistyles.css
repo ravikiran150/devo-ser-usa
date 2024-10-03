@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+  }
+  
+  header {
+    background-color: #FF9933; /* Saffron color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    background-color: #138808; /* Green color */
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .avatar-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar-section h2 {
+    color: #FF9933; /* Saffron color for headers */
+    margin-bottom: 10px;
+  }
+  
+  .avatar-section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .description, .rituals, .cultural-significance {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .description {
+    font-style: italic;
+  }
+  
+  footer {
+    background-color: #138808; /* Green color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .avatar-section img {
+      max-width: 100%;
+    }
+  }
+  
