@@ -3,27 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divine Directions</title>
+    <title>Poojas</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="./search.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/testimonial.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
+        <div class="logo">
+            <span><h1 class="mainheading">SRI GURU GRUHA PEETAM</h1></span>
+            <img src= "./img/shortlogo.png" alt="Divine Directions Logo">
+        </div>
+        
         <nav class="navbar">
-            <div class="logo">
-                <span><h1 class="mainheading">SRI GURU GRUHA PEETAM</h1></span>
-                <img src= "./img/shortlogo.png" alt="Divine Directions Logo">
-            </div>
+            
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">About Us</a></li>
-                <li><a href="#book-service-form">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#home"><i class="fas fa-home"></i>Home</a>
+    
+                </li>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#services">Abhishekam</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Ekavara Rudra Abhishekam </a></li>
+                        <li><a href="#">Maahanyasa purvaka Rudra Abhishekam </a></li>
+                        <li><a href="#">Rudra paashu patha Abhishekam  </a></li>
+                    </ul>
+                    </li>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#services">Homam</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Chandi Homam</a></li>
+                            <li><a href="#">Ganapathi Homam</a></li>
+                            <li><a href="#">Rudra Homam</a></li>
+                            <li><a href="#">Sudharshana Homam</a></li>
+                            <li><a href="#">Ayushya Homam</a></li>
+                            <li><a href="#">Mruthyunjaya Homam</a></li>
+                            <li><a href="#">Navagraha  santhi Homam</a></li>
+                            <li><a href="#">Nakshatra Homam</a></li>
+                            <li><a href="#">Lakshmi Homam</a></li>
+                            <li><a href="#">Vaastu Homam</a></li>
+
+                        </ul>
+                        </li>
+                        <ul class="nav-links">
+                            <li class="dropdown">
+                                <a href="#services">Pooja Services</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Ganesh Pooja</a></li>
+                                <li><a href="#">Punyaha Vaachanam</a></li>
+                                <li><a href="#">Bhoomi Pooja (Ground breaking ceremony)</a></li>
+                                <li><a href="#">Gruha pravesham (House warming ceremony)</a></li>
+                                <li><a href="#">Vaasthu Shanti Pooja</a></li>
+                                <li><a href="#">Navagraha Shanti Pooja</a></li>
+                                <li><a href="#">Lakshmi Pooja</a></li>
+                                <li><a href="#">Pumsavanam</a></li>
+                                <li><a href="#">Seemantham (Baby shower Ceremony)</a></li>
+                                <li><a href="#">Jathakarma</a></li>
+                                <li><a href="#">Namakaranam (Naming ceremony+cradle ceremony)</a></li>
+                                <li><a href="#">Annaprasana  (Baby 1st time rice feeding ceremony)</a></li>
+                                <li><a href="#">Aksharabyasam (Baby 1st time school ceremony)</a></li>
+                                <li><a href="#">Kesa kandana (Baby 1st time Haircut ceremony)</a></li>
+                                <li><a href="#">Upanayanam (Sacred thread ceremony)</a></li>
+
+                            </ul>
+                            </li>
+                        
+                            <ul class="nav-links">
+                                <li class="dropdown">
+                                    <a href="#services">Marriage</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Engagements</a></li>
+                                    <li><a href="#">Vivahamu (weddings)</a></li>
+                                    <li><a href="#">Shasti Purthi (60 years wedding ceremony)</a></li>
+                                    <li><a href="#">Vugra & Bhema ratha shanthi</a></li>
+                                </ul>
+                                </li>
+
+                                <ul class="nav-links">
+                                    <li class="dropdown">
+                                        <a href="#services">Vratams</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="#">Sankasthaharachatrudhi vratham </a></li>
+                                        <li><a href="#">Satyanarayana vratham </a></li>
+                                        <li><a href="#">varalakshmi vratham venkateswara vratham </a></li>
+                                        <li><a href="#">Vugra & Bhema ratha shanthi</a></li>
+                                    </ul>
+                                    </li>
+
                 <div class="nav-search-container">
                     <input type="text" id="search-box" class="search-input" placeholder="Search services...">
                     <button id="search-button" class="search-btn">
@@ -36,24 +110,248 @@
 
                        
         </nav>
+        
     </header>
 
-</header>
-<!-- Hero Section -->
-<section class="hero">
+ <!-- Hero Section -->
+    
+ <section class="hero">
+
+       
     <div class="hero-text">
-        <h1>Book a Divine Ritual with Us</h1>
-        <p> Pooja is a central act of worship in Hinduism, involving offerings, prayers, and rituals to invoke deities or divine energies. It is a way to connect with the spiritual realm and seek blessings, protection, or fulfillment of desires. <br><br>
-             <!-- <a href="knowmore.html"><button>Know More</button></a>   -->
-            </p>
+        <h1>Book a Pooja with Us</h1>
+        <p>In Hindu culture, pooja is a sacred ritual of offering prayers, flowers, and food to deities as an expression of devotion and reverence. It connects individuals with the divine, inviting blessings, protection, and peace, and is performed for various occasions, from daily rituals to major life events and festivals. Through pooja, devotees honor the divine, fostering spiritual growth and harmony.
+        <br><Br>
+            <ul class="other-pages-text">
+                <li><b>Ganesh Pooja</b></li>
+                <br>
+                <li><b>Punyaha Vaachanam</b> </li>
+                <br>
+                <li><b>Bhoomi Pooja (Ground breaking ceremony)</b> </li>
+                <br>
+                <li><b>Gruha pravesham (House warming ceremony)</b></li>
+                <br>
+                <li><b>Vaasthu Shanti Pooja</b></li>
+                <br>
+                <li><b>Navagraha Shanti Pooja</b></li>
+                <br>
+                <li><b>Lakshmi Pooja</b></li>
+                <br>
+                <li><b>Pumsavanam</b></li>
+                <br>
+              <li>More</li>
+                
+            </ul>
+
+            
+        </p>
+
+        
+
+
 
         
 
     </div>
     <div class="hero-image">
-        <img src="./img/logo-no-background.png" alt="Divine Ritual Image">
+        <img src="./img/abhishekam.jpg" alt="Divine Ritual Image">
     </div>
 </section>
+
+ 
+ <!-- Online Puja Services Section -->
+ <section class="puja-services" id="services">
+    <div class="container">
+        <div class="services-header">
+            <h2>Poojas</h2>
+            <p></p>
+        </div>
+
+        
+        <!-- Service Cards -->
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <a  href="index.html#book-service-form"class="sacrament-link">
+            <div class="service-card">
+                <img src="./img/abhishekam.jpg" alt="Ganesh Pooja">
+                <h3>Ganesh Pooja</h3>
+                <p> <b>Ganesh Pooja</b> </p>
+                <button >Get Quote</button>
+            </div>
+            </a>
+            
+
+            <!-- Card 2 -->
+            <a href="index.html#book-service-form" class="sacrament-link">
+            <div class="service-card">
+                <img src="./img/abhishekam.jpg" alt="Punyaha Vaachanam">
+                <h3>Punyaha Vaachanam</h3>
+                <p><b> Punyaha Vaachanam</b> </p>
+                     <br>
+                     <br>
+                     <br>
+                <button>Get Quote</button>
+            </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="index.html#book-service-form" class="sacrament-link">
+            <div class="service-card">
+                <img src="./img/abhishekam.jpg" alt="Bhoomi Pooja (Ground breaking ceremony)">
+                <h3>Bhoomi Pooja (Ground breaking ceremony)</h3>
+                <p><b>Bhoomi Pooja (Ground breaking ceremony)</b></p>
+                    <br>
+                    
+                    
+                <button>Get Quote</button>
+            </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="index.html#book-service-form" class="sacrament-link">
+              <div class="service-card">
+                  <img src="./img/abhishekam.jpg" alt="Gruha pravesham (House warming ceremony)">
+                  <h3>Gruha pravesham (House warming ceremony)</h3>
+                  <p><b>Gruha pravesham (House warming ceremony)</b></p>
+                      <br>
+                      
+                      
+                  <button>Get Quote</button>
+              </div>
+              </a>
+
+              <!-- Card 5 -->
+            <a href="index.html#book-service-form" class="sacrament-link">
+              <div class="service-card">
+                  <img src="./img/abhishekam.jpg" alt="Vaasthu Shanti Pooja">
+                  <h3>Vaasthu Shanti Pooja</h3>
+                  <p><b>Vaasthu Shanti Pooja</b></p>
+                      <br>
+                  <button>Get Quote</button>
+              </div>
+              </a>
+              <!-- Card 6 -->
+              <a href="index.html#book-service-form" class="sacrament-link">
+                <div class="service-card">
+                    <img src="./img/abhishekam.jpg" alt="Navagraha Shanti Pooja">
+                    <h3>Navagraha Shanti Pooja</h3>
+                    <p><b>Navagraha Shanti Pooja</b></p>
+                        <br>
+                    <button>Get Quote</button>
+                </div>
+                </a>
+                <!-- Card 7 -->
+                <a href="index.html#book-service-form" class="sacrament-link">
+                  <div class="service-card">
+                      <img src="./img/abhishekam.jpg" alt="Lakshmi Pooja">
+                      <h3>Lakshmi Pooja</h3>
+                      <p><b>Lakshmi Pooja</b></p>
+                          <br>
+                      <button>Get Quote</button>
+                  </div>
+                  </a>
+
+                  <!-- Card 8 -->
+                  <a href="index.html#book-service-form" class="sacrament-link">
+                    <div class="service-card">
+                        <img src="./img/abhishekam.jpg" alt="Pumsavanam">
+                        <h3>Pumsavanam</h3>
+                        <p><b>Pumsavanam</b></p>
+                            <br>
+                        <button>Get Quote</button>
+                    </div>
+                    </a>
+                    <!-- Card 9 -->
+                    <a href="index.html#book-service-form" class="sacrament-link">
+                      <div class="service-card">
+                          <img src="./img/abhishekam.jpg" alt="Seemantham (Baby shower Ceremony)">
+                          <h3>Seemantham (Baby shower Ceremony)</h3>
+                          <p><b>Seemantham (Baby shower Ceremony)</b></p>
+                              <br>
+                          <button>Get Quote</button>
+                      </div>
+                      </a>
+
+                      <!-- Card 10 -->
+                      <a href="index.html#book-service-form" class="sacrament-link">
+                        <div class="service-card">
+                            <img src="./img/abhishekam.jpg" alt="Jathakarma">
+                            <h3>Jathakarma</h3>
+                            <p><b>Jathakarma</b></p>
+                                <br>
+                            <button>Get Quote</button>
+                        </div>
+                        </a>
+
+                        <!-- Card 11 -->
+                        <a href="index.html#book-service-form" class="sacrament-link">
+                          <div class="service-card">
+                              <img src="./img/abhishekam.jpg" alt="Namakaranam (Naming ceremony+cradle ceremony)">
+                              <h3>Namakaranam (Naming ceremony+cradle ceremony)</h3>
+                              <p><b>Namakaranam (Naming ceremony+cradle ceremony)</b></p>
+                                  <br>
+                              <button>Get Quote</button>
+                          </div>
+                          </a>
+
+                          <!-- Card 12 -->
+                          <a href="index.html#book-service-form" class="sacrament-link">
+                            <div class="service-card">
+                                <img src="./img/abhishekam.jpg" alt="Annaprasana  (Baby 1st time rice feeding ceremony)">
+                                <h3>Annaprasana  (Baby 1st time rice feeding ceremony)</h3>
+                                <p><b>Annaprasana  (Baby 1st time rice feeding ceremony)</b></p>
+                                    <br>
+                                <button>Get Quote</button>
+                            </div>
+                            </a>
+
+                            <!-- Card 13 -->
+                            <a href="index.html#book-service-form" class="sacrament-link">
+                              <div class="service-card">
+                                  <img src="./img/abhishekam.jpg" alt="Aksharabyasam (Baby 1st time school ceremony)">
+                                  <h3>Aksharabyasam (Baby 1st time school ceremony)</h3>
+                                  <p><b>Aksharabyasam (Baby 1st time school ceremony)</b></p>
+                                      <br>
+                                  <button>Get Quote</button>
+                              </div>
+                              </a>
+
+                              <!-- Card 14 -->
+                              <a href="index.html#book-service-form" class="sacrament-link">
+                                <div class="service-card">
+                                    <img src="./img/abhishekam.jpg" alt="Kesa Kandana (Baby 1st time Haircut ceremony)">
+                                    <h3>Kesa Kandana (Baby 1st time Haircut ceremony)</h3>
+                                    <p><b>Kesa Kandana (Baby 1st time Haircut ceremony)</b></p>
+                                        <br>
+                                    <button>Get Quote</button>
+                                </div>
+                                </a>
+
+                                <!-- Card 15 -->
+                                <a href="index.html#book-service-form" class="sacrament-link">
+                                  <div class="service-card">
+                                      <img src="./img/abhishekam.jpg" alt="Upanayanam (Sacred thread ceremony)">
+                                      <h3>Upanayanam (Sacred thread ceremony)</h3>
+                                      <p><b>Upanayanam (Sacred thread ceremony)</b></p>
+                                          <br>
+                                      <button>Get Quote</button>
+                                  </div>
+                                  </a>
+
+
+            <!-- Card 4 -->
+            <a href="index.html#book-service-form" class="sacrament-link">
+            <div class="service-card">
+                <img src="./img/abhishekam.jpg" alt="Other">
+                <h3>Other Pooja</h3>
+                <p>We will perform all other pooja. Please let us know your specific requirements.</p>
+                <button>Get Quote</button>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-float" target="_blank">
@@ -61,194 +359,71 @@
 </a>
 
 
-     <!-- Online Puja Services Section -->
-<section class="puja-services" id="services">
-    <div class="container">
-        <div class="services-header">
-            <h2>We Provide the Best Puja Services</h2>
-            <p>The Veda Pandits perform all Pujas and Homas as well as special occasion ceremonies. We have the best group of eminent Purohits and scholars at Divine Directions, a trusted name in India.</p>
-        </div>
-        
-        <!-- Service Cards -->
-        <div class="services-grid">
-            <!-- Card 1 -->
-            <a href="Abhishekam.html" class="sacrament-link">
-            <div class="service-card">
-                <img src="./img/poojas_resize.JPG" alt="Namakaranam">
-                <h3>Abhishekam</h3>
-                <p>Abhishekam like Ekavara Rudra Abhishekam, Maahanyasa purvaka Rudra Abhishekam, Rudra paashu patha Abhishekam Pandit ji can perform all kinds of Abhishekam’s </p>
-                <button>Get Quote</button>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./img/logo-no-background.png" alt="Company Logo" />
+                
             </div>
-            </a>
-
-            <!-- Card 2 -->
-            <a href="pooja.html" class="sacrament-link">
-            <div class="service-card">
-                <img src="./img/annaprasana_resize.jpg" alt="Annaprasana">
-                <h3>Pooja</h3>
-                <p>All kinds of pooja like Vaasthu Shanti Pooja,Navagraha Shanti Pooja,Lakshmi Pooja will be performed</p>
-                <button>Get Quote</button>
-            </div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="homam.html" class="sacrament-link">
-            <div class="service-card">
-                <img src="./img/homam_resize.JPG" alt="GruhaPravesam">
-                <h3>Homam</h3>
-                <p>Perform homam like Chandi Homam, Ganapathi, Sudharshana etc are perfomred</p>
-                <button>Get Quote</button>
-            </div>
-            </a>
-
-
-            <!-- Card 4 -->
-            <a href="vartham.html" class="sacrament-link">
-            <div class="service-card">
-                <img src="./img/poojas_resize.JPG" alt="GruhaPravesam">
-                <h3>Vartham</h3>
-                <p>Perform this puja during the first time of entering a new house.</p>
-                <button>Get Quote</button>
-            </div>
-            </a>
-
-            <!-- Card 5 -->
-            <a href="Marriage.html" class="sacrament-link">
-                <div class="service-card">
-                    <img src="./img/Kalyanam_resize.JPG" alt="Marriage">
-                    <h3>Kalyanam</h3>
-                    <p>Marriage is sacred; consult for the right date and rituals for marriage.</p>
-                    <button>Get Quote</button>
+    
+            <div class="footer-sections">
+                <!-- Company Section -->
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Anti-discrimination policy</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
                 </div>
-                </a>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Us Section -->
-<section class="why-choose-us" id="why-us">
-    <div class="container">
-        <div class="whyus-content">
-            <div class="whyus-text">
-                <h2>Why Choose Us</h2>
-                <h2>Trusted Online Puja Services in USA</h2>
-                <p>Divine Directions is a trusted online platform that offers a wide range of puja services, including homam, abhishekam, and other ritualistic ceremonies. With the help of experienced and qualified purohits, you can perform pujas from the comfort of your own home, ensuring a hassle-free and convenient experience. Book your online puja with purohitulu.com and receive divine blessings for a happy and prosperous life.</p>
-                <p>Are you living away from your hometown and finding it difficult to perform pujas and other religious rituals? Don’t worry, divine directions is here to help you. divine directions is a reliable and trustworthy online puja service provider in Hyderabad that offers a wide range of puja services at your doorstep.</p>
-                <!-- <a href="know-more.html"><button class="know-more-btn">Know More</button></a> -->
+    
+                <!-- For Customers Section -->
+                <div class="footer-section">
+                    <h3>For customers</h3>
+                    <ul>
+                        <li><a href="#">UC reviews</a></li>
+                        <li><a href="#">Categories near you</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Us Section -->
+                <div class="footer-section">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i><a href="#">  mail@gmail.com</a></li>
+                        <br>
+                        </i><i class="fas fa-phone"></i><a href="#">  +91 9959370059</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Links Section -->
+                <div class="footer-section social-links">
+                    <h3>Social links</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+    
+                    
+                    <!-- <div class="app-links">
+                        <a href="#"><img src="app-store-badge.png" alt="App Store"></a>
+                        <a href="#"><img src="google-play-badge.png" alt="Google Play"></a>
+                    </div> -->
+                </div>
             </div>
-            <div class="whyus-image">
-                <img src="./img/pandit.jpg" alt="Why Choose Us">
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
-
-<section class="testimonial-section">
-    <div class="testimonial-container">
-        <div class="testimonial-image">
-            <img src="./img/pandit.jpg" alt="Customer Image">
-        </div>
-        <div class="testimonial-content">
-            <i class="fas fa-quote-left"></i>
-            <p>"Divine Directions made it easy for us to perform our family’s rituals. Their services are excellent, and the purohits are very professional. Highly recommended!"</p>
-            <h4>–Murari Sharma</h4>
-        </div>
-    </div>
-</section>
-
-
-<!-- Contact Section -->
-<section id="book-service-form">
-    <div class="form-container">
-      <h2>Book a Service with Us</h2>
-      
-      <!-- Google Form Embed -->
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfXk2AWcyGzDbEmvwsmZcHjGUW-ysFsjuUM8083EIqJQ9UA8Q/viewform?embedded=true" 
-        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      
-    </div>
-  </section>
-<!-- Our Team Section -->
-<section id="team">
-    <div class="container">
-      <div class="section-title">
-        <h2>Our Team</h2>
-        <p>Meet the experts behind Divine Directions.</p>
-      </div>
-  
-      <div class="team-grid">
-        <!-- Team Member 1 -->
-        <div class="team-member">
-          <img src="https://via.placeholder.com/300x300" alt="Team Member 1">
-          <div class="team-info">
-            <h3>Shiva Sharma</h3>
-            <p>Head Priest</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 2 -->
-        <div class="team-member">
-          <img src="https://via.placeholder.com/300x300" alt="Team Member 2">
-          <div class="team-info">
-            <h3>Murari Sharma</h3>
-            <p>Vedic Scholar</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 3 -->
-        <div class="team-member">
-          <img src="https://via.placeholder.com/300x300" alt="Team Member 3">
-          <div class="team-info">
-            <h3>Gopal Sharma</h3>
-            <p>Astrologer</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Team Member 4 -->
-        <div class="team-member">
-          <img src="https://via.placeholder.com/300x300" alt="Team Member 4">
-          <div class="team-info">
-            <h3>Bhavana Sharma</h3>
-            <p>Spiritual Guide</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-<!-- Footer section -->
-<footer class="footer-section">
-    <div class="footer-container">
-        <p>&copy; 2024 Divine Directions. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-regular fa-message"></i></a>
-        </div>
-    </div>
-</footer>
-
+    
+        <div class="copyright"><p>© Copyright 2024 Your Company. All rights reserved.</p></div>
+    </footer>
+    
